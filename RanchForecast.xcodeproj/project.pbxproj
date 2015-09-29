@@ -12,6 +12,8 @@
 		69F259071BBB26DB00F1CAF6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F259051BBB26DB00F1CAF6 /* MainMenu.xib */; };
 		69F259121BBB26DB00F1CAF6 /* RanchForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F259111BBB26DB00F1CAF6 /* RanchForecastTests.swift */; };
 		69F2591D1BBB26DB00F1CAF6 /* RanchForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2591C1BBB26DB00F1CAF6 /* RanchForecastUITests.swift */; };
+		69F2592C1BBB27A300F1CAF6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2592A1BBB27A300F1CAF6 /* MainWindowController.swift */; settings = {ASSET_TAGS = (); }; };
+		69F2592D1BBB27A300F1CAF6 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2592B1BBB27A300F1CAF6 /* MainWindowController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		69F259181BBB26DB00F1CAF6 /* RanchForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RanchForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F2591C1BBB26DB00F1CAF6 /* RanchForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanchForecastUITests.swift; sourceTree = "<group>"; };
 		69F2591E1BBB26DB00F1CAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F2592A1BBB27A300F1CAF6 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		69F2592B1BBB27A300F1CAF6 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				69F259031BBB26DB00F1CAF6 /* Assets.xcassets */,
 				69F259051BBB26DB00F1CAF6 /* MainMenu.xib */,
 				69F259081BBB26DB00F1CAF6 /* Info.plist */,
+				69F2592A1BBB27A300F1CAF6 /* MainWindowController.swift */,
+				69F2592B1BBB27A300F1CAF6 /* MainWindowController.xib */,
 			);
 			path = RanchForecast;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F259041BBB26DB00F1CAF6 /* Assets.xcassets in Resources */,
+				69F2592D1BBB27A300F1CAF6 /* MainWindowController.xib in Resources */,
 				69F259071BBB26DB00F1CAF6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69F2592C1BBB27A300F1CAF6 /* MainWindowController.swift in Sources */,
 				69F259021BBB26DB00F1CAF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
