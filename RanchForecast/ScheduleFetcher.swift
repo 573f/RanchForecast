@@ -37,24 +37,7 @@ class ScheduleFetcher {
         let request = NSURLRequest(URL: url!)
         
         let task = session.dataTaskWithRequest(request) { data, response, error in
-            let result: FetchCoursesResult
-            
-            if let data = data {
-                if let response = response as? NSHTTPURLResponse {
-                    print("\(data.length) bytes, HTTP \(response.statusCode).")
-                    if response.statusCode == 200 {
-                        result = FetchCoursesResult { try self.coursesFromData(data) }
-                    } else {
-                        let error = self.errorWithCode(2, localizedDescription: "Bad status code \(response.statusCode)")
-                        result = .Failure(error)
-                    }
-                } else {
-                    let error = self.errorWithCode(1, localizedDescription: "Unexpected response object.")
-                    result = .Failure(error)
-                }
-            } else {
-                result = .Failure(error!)
-            }
+            let result: FetchCoursesResult = self.resultFromData(data, response: response, error: error)
             
             NSOperationQueue.mainQueue().addOperationWithBlock {
                 completionHandler(result)
@@ -96,5 +79,35 @@ class ScheduleFetcher {
             }
         }
         return courses
+    }
+    
+    func resultFromData(data: NSData?, response: NSURLResponse?, error: NSError?) -> FetchCoursesResult {
+        let result: FetchCoursesResult
+        
+        if let data = data {
+            if let response = response as? NSHTTPURLResponse {
+                print("\(data.length) bytes, HTTP \(response.statusCode).")
+                if response.statusCode == 200 {
+                    result = FetchCoursesResult { try self.coursesFromData(data) }
+                }
+                else {
+                    let error =
+                    self.errorWithCode(2, localizedDescription:
+                        "Bad status code \(response.statusCode)")
+                    result = .Failure(error)
+                }
+            }
+            else {
+                let error =
+                self.errorWithCode(1, localizedDescription:
+                    "Unexpected response object.")
+                result = .Failure(error)
+            }
+        }
+        else {
+            result = .Failure(error!)
+        }
+        
+        return result
     }
 }

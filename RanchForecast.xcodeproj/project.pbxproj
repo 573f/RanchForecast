@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6998892F1BBD8E52004ACB8D /* CourseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998892E1BBD8E52004ACB8D /* CourseTest.swift */; settings = {ASSET_TAGS = (); }; };
+		699889311BBD8F52004ACB8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699889301BBD8F52004ACB8D /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		699889331BBDA31E004ACB8D /* ScheduleFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699889321BBDA31E004ACB8D /* ScheduleFetcherTests.swift */; settings = {ASSET_TAGS = (); }; };
 		69F259021BBB26DB00F1CAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F259011BBB26DB00F1CAF6 /* AppDelegate.swift */; };
 		69F259041BBB26DB00F1CAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F259031BBB26DB00F1CAF6 /* Assets.xcassets */; };
 		69F259071BBB26DB00F1CAF6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F259051BBB26DB00F1CAF6 /* MainMenu.xib */; };
-		69F259121BBB26DB00F1CAF6 /* RanchForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F259111BBB26DB00F1CAF6 /* RanchForecastTests.swift */; };
 		69F2591D1BBB26DB00F1CAF6 /* RanchForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2591C1BBB26DB00F1CAF6 /* RanchForecastUITests.swift */; };
 		69F2592C1BBB27A300F1CAF6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2592A1BBB27A300F1CAF6 /* MainWindowController.swift */; settings = {ASSET_TAGS = (); }; };
 		69F2592D1BBB27A300F1CAF6 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F2592B1BBB27A300F1CAF6 /* MainWindowController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -36,13 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6998892E1BBD8E52004ACB8D /* CourseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTest.swift; sourceTree = "<group>"; };
+		699889301BBD8F52004ACB8D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		699889321BBDA31E004ACB8D /* ScheduleFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleFetcherTests.swift; sourceTree = "<group>"; };
 		69F258FE1BBB26DB00F1CAF6 /* RanchForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RanchForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F259011BBB26DB00F1CAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69F259031BBB26DB00F1CAF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69F259061BBB26DB00F1CAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		69F259081BBB26DB00F1CAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69F2590D1BBB26DB00F1CAF6 /* RanchForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RanchForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		69F259111BBB26DB00F1CAF6 /* RanchForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanchForecastTests.swift; sourceTree = "<group>"; };
 		69F259131BBB26DB00F1CAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69F259181BBB26DB00F1CAF6 /* RanchForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RanchForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F2591C1BBB26DB00F1CAF6 /* RanchForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanchForecastUITests.swift; sourceTree = "<group>"; };
@@ -116,8 +120,10 @@
 		69F259101BBB26DB00F1CAF6 /* RanchForecastTests */ = {
 			isa = PBXGroup;
 			children = (
-				69F259111BBB26DB00F1CAF6 /* RanchForecastTests.swift */,
 				69F259131BBB26DB00F1CAF6 /* Info.plist */,
+				6998892E1BBD8E52004ACB8D /* CourseTest.swift */,
+				699889301BBD8F52004ACB8D /* Constants.swift */,
+				699889321BBDA31E004ACB8D /* ScheduleFetcherTests.swift */,
 			);
 			path = RanchForecastTests;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 		69F258F61BBB26DB00F1CAF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stephen Skubik-Peplaski";
 				TargetAttributes = {
@@ -273,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69F259121BBB26DB00F1CAF6 /* RanchForecastTests.swift in Sources */,
+				6998892F1BBD8E52004ACB8D /* CourseTest.swift in Sources */,
+				699889331BBDA31E004ACB8D /* ScheduleFetcherTests.swift in Sources */,
+				699889311BBD8F52004ACB8D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,11 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RanchForecastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.573f.RanchForecastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RanchForecast.app/Contents/MacOS/RanchForecast";
 			};
 			name = Debug;
@@ -440,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RanchForecastTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
